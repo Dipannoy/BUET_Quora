@@ -1,0 +1,16 @@
+{% extends 'music/base.html' %}
+
+{% block title %}Song Details{% endblock %}
+
+<!--<img src = "C:\Users\User\Desktop\website\music\templates\music\terminator.jpg" >-->
+{% block body %}
+<h1>{{ album.album_title }}</h1>
+<h2> {{ album.artist }} </h2>
+
+{% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+{% endif %}
+
+
+
+{% endblock %}
